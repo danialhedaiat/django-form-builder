@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "djangoformbuilder"
+version = "0.1.0"
+description = "A simple and powerfull form builder app in django, it has schema base structure and didnt use JsonField"
+readme = "README.md"
+required-python = ">= 3.12"
+authors = [
+    {name = "Danial Hadi", email = "danialhedaiat@gmail.com"}
+]
+dependencies = [
+    "django>=5.0"
+]
+classifiers = [
+    "Environment :: Django Application",
+    "Framework :: Django",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
